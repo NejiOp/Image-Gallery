@@ -1,0 +1,40 @@
+h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1:hover {
+  color: rgb(60, 255, 0);
+  font-size: 2.5rem;
+}
+
+.gallery {
+  margin: 10vh;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery_item {
+  scroll-snap-align: center;
+  min-width: 30vw;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.gallery_image {
+  width: 30vw;
+  height: 30vh;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.gallery_image:hover {
+  opacity: 1;
+  filter: none;
+  width: 32vw;
+  height: 40vh;
+  transform: rotate(360deg);
+}
